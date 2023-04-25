@@ -25,16 +25,12 @@ namespace employeesV1
         
         DataTable table = new DataTable("My Table");
         
-        
-
-        Person p = null;
-      
+ 
         public Form1()
         {
             InitializeComponent();
             //prevent window resizing
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; 
 
             int month = now.Month;
             int day = now.Day;
@@ -58,9 +54,8 @@ namespace employeesV1
 
             // Disable the control box (which includes the close button)
             //this.ControlBox = false;
-
              
-            lblDate.Text = DateTime.Now.ToString("dddd, MMMM dd yyyy").ToString();
+            lblDate2.Text = DateTime.Now.ToString("dddd, MMMM dd yyyy").ToString();
 
             table.Columns.Add("Name", Type.GetType("System.String"));
             table.Columns.Add("Shift", Type.GetType("System.String"));
@@ -316,5 +311,7 @@ namespace employeesV1
         {
 
         }
+
+   
     }
 }
