@@ -30,3 +30,4 @@ C:\Users\marco\source\repos\emploees\emploees\obj\Debug\employeesV1.csproj.CopyC
 C:\Users\marco\source\repos\emploees\emploees\obj\Debug\employeesV1.exe
 C:\Users\marco\source\repos\emploees\emploees\obj\Debug\employeesV1.pdb
 C:\Users\marco\source\repos\emploees\emploees\obj\Debug\employeesV1.Form1.resources
+C:\Users\marco\source\repos\emploees\emploees\obj\Debug\employeesV1.Form2.resources

@@ -29,8 +29,7 @@ namespace employeesV1
         public Form1()
         {
             InitializeComponent();
-
-       
+             
             //prevent window resizing
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             
@@ -49,9 +48,7 @@ namespace employeesV1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            
-
+              
             // Disable the control box (which includes the close button)
             //this.ControlBox = false;
 
@@ -87,7 +84,7 @@ namespace employeesV1
             //populate the Grid Rows from csv file
             for (int i = 1; i < csvLines.Length; i++)
             {
-                table.Rows.Add(csvLines[i].Split(',')[0], csvLines[i].Split(',')[1], csvLines[i].Split(',')[2], csvLines[i].Split(',')[3], csvLines[i].Split(',')[4]);
+                table.Rows.Add(csvLines[i].Split(',')[0], csvLines[i].Split(',')[1], csvLines[i].Split(',')[2]);
             }
 
 
@@ -384,6 +381,12 @@ namespace employeesV1
             //opens the file
             System.Diagnostics.Process.Start("C:\\Users\\public\\data\\all.csv");
 
+        }
+
+        private void btnChange_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

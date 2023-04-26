@@ -44,6 +44,7 @@
             this.btnReports = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnGenerateAll = new System.Windows.Forms.Button();
+            this.btnChange = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -194,12 +195,23 @@
             this.btnGenerateAll.UseVisualStyleBackColor = true;
             this.btnGenerateAll.Click += new System.EventHandler(this.btnGenerateAll_Click);
             // 
+            // btnChange
+            // 
+            this.btnChange.Location = new System.Drawing.Point(244, 826);
+            this.btnChange.Name = "btnChange";
+            this.btnChange.Size = new System.Drawing.Size(75, 23);
+            this.btnChange.TabIndex = 21;
+            this.btnChange.Text = "Callouts";
+            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(58)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(1259, 975);
+            this.Controls.Add(this.btnChange);
             this.Controls.Add(this.btnGenerateAll);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnReports);
@@ -239,6 +251,7 @@
         private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnGenerateAll;
+        private System.Windows.Forms.Button btnChange;
     }
 }
 
