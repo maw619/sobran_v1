@@ -41,6 +41,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDate2 = new System.Windows.Forms.Label();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnGenerateAll = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -162,12 +165,44 @@
             this.lblDate2.Size = new System.Drawing.Size(234, 32);
             this.lblDate2.TabIndex = 17;
             // 
+            // btnReports
+            // 
+            this.btnReports.Location = new System.Drawing.Point(973, 852);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(75, 23);
+            this.btnReports.TabIndex = 18;
+            this.btnReports.Text = "generate";
+            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = " ";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(907, 826);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 19;
+            // 
+            // btnGenerateAll
+            // 
+            this.btnGenerateAll.Location = new System.Drawing.Point(973, 881);
+            this.btnGenerateAll.Name = "btnGenerateAll";
+            this.btnGenerateAll.Size = new System.Drawing.Size(75, 23);
+            this.btnGenerateAll.TabIndex = 20;
+            this.btnGenerateAll.Text = "Generate All";
+            this.btnGenerateAll.UseVisualStyleBackColor = true;
+            this.btnGenerateAll.Click += new System.EventHandler(this.btnGenerateAll_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(58)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(1259, 975);
+            this.Controls.Add(this.btnGenerateAll);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnReports);
             this.Controls.Add(this.lblDate2);
             this.Controls.Add(this.openFileBtn);
             this.Controls.Add(this.panel1);
@@ -201,6 +236,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblDate2;
+        private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnGenerateAll;
     }
 }
 
